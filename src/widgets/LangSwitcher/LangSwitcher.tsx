@@ -24,7 +24,6 @@ export const LangSwitcher: FC<LangSwitcherProps> = (props) => {
             onClick={toggle}
         >
             {t('Язык')}
-            {t('Яд')}
         </Button>
     );
 };
