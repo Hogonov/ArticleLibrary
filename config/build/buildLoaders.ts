@@ -66,5 +66,11 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         },
     };
 
-    return [typescriptLoader, cssLoader, babelLoader, svgLoader, fileLoader];
+    return [
+        fileLoader,
+        svgLoader,
+        babelLoader,
+        typescriptLoader,
+        cssLoader,
+    ];
 }
