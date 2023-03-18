@@ -1,4 +1,7 @@
 {
+  "Выбросить ошибку": "throw Error",
+  "Обновить страницу": "Reload page",
+  "Произошла какая-то ошибка": "Somethin went wrong",
   "Страница не найдена": "Page not found",
   "Язык": "English"
 }
