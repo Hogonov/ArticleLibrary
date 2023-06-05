@@ -1,12 +1,15 @@
 @import "reset";
-@import "./variables/global";
-@import "./themes/normal";
-@import "./themes/dark";
+@import "variables/global";
+@import "themes/normal";
+@import "themes/dark";
+
+body {
+    font: var(--font-m);
+    color: var(--primary-color);
+}
 
 .app {
-    font: var(--font-m);
     background: var(--bg-color);
-    color: var(--primaty-color);
     min-height: 100vh;
 }
 
@@ -15,6 +18,6 @@
 }
 
 .page-wrapper {
-    padding: 20px;
     flex-grow: 1;
+    padding: 20px;
 }

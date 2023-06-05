@@ -8,7 +8,7 @@ import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import AboutIcon from 'shared/assets/icons/about-20-20.svg';
 import MainIcon from 'shared/assets/icons/main-20-20.svg';
-import classes from './Sidebar.module.scss';
+import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
     className?: string,
@@ -27,9 +27,9 @@ export const Sidebar: FC<SidebarProps> = (props) => {
             data-testid="sidebar"
             className={
                 classNames(
-                    classes.Sidebar,
+                    cls.Sidebar,
                     {
-                        [classes.collapsed]: collapsed,
+                        [cls.collapsed]: collapsed,
                     },
                     [className],
                 )
@@ -38,39 +38,39 @@ export const Sidebar: FC<SidebarProps> = (props) => {
             <Button
                 data-testid="sidebar-toggle"
                 onClick={onToggle}
-                className={classes.collapseBtn}
+                className={cls.collapseBtn}
                 theme={ButtonTheme.BACKGROUND_INVERTED}
                 size={ButtonSize.L}
                 square
             >
                 {collapsed ? '>' : '<'}
             </Button>
-            <div className={classes.items}>
+            <div className={cls.items}>
                 <AppLink
                     to={RoutePath.main}
                     theme={AppLinkTheme.INVERTED}
-                    className={classes.item}
+                    className={cls.item}
                 >
-                    <MainIcon className={classes.icon} />
-                    <span className={classes.link}>
+                    <MainIcon className={cls.icon} />
+                    <span className={cls.link}>
                         {t('Главная')}
                     </span>
                 </AppLink>
                 <AppLink
-                    className={classes.item}
+                    className={cls.item}
                     to={RoutePath.about}
                     theme={AppLinkTheme.INVERTED}
                 >
-                    <AboutIcon className={classes.icon} />
-                    <span className={classes.link}>
+                    <AboutIcon className={cls.icon} />
+                    <span className={cls.link}>
                         {t('О сайте')}
                     </span>
                 </AppLink>
             </div>
 
-            <div className={classes.switchers}>
+            <div className={cls.switchers}>
                 <ThemeSwitcher />
-                <LangSwitcher className={classes.lang} short={collapsed} />
+                <LangSwitcher className={cls.lang} short={collapsed} />
             </div>
         </div>
     );
