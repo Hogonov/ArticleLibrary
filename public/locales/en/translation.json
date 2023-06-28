@@ -1,4 +1,6 @@
 {
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
   "Войти": "Login",
   "Выбросить ошибку": "throw Error",
   "Главная": "Main",
