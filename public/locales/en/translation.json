@@ -2,12 +2,15 @@
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Войти": "Login",
+  "Вы ввели неверный логин или пароль": "Uncorrect username or password",
   "Выбросить ошибку": "throw Error",
+  "Выйти": "Logout",
   "Главная": "Main",
   "Короткий язык": "ENG",
   "О сайте": "About",
   "Обновить страницу": "Reload page",
   "Произошла какая-то ошибка": "Somethin went wrong",
   "Страница не найдена": "Page not found",
+  "Форма авторизации": "Auth form",
   "Язык": "English"
 }
