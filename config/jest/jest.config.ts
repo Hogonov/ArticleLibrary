@@ -47,6 +47,7 @@ export default {
         '@shared/(.*)': '<rootDir>/src/shared/$1',
         '@pages/(.*)': '<rootDir>/src/pages/$1',
         '@widgets/(.*)': '<rootDir>/src/widgets/$1',
+        axios: 'axios/dist/node/axios.cjs',
     },
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
