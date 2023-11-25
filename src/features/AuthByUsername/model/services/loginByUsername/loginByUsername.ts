@@ -8,6 +8,7 @@ interface LoginByUsernameProps {
     password: string
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 enum LoginErrors {
     INCORRECT_DATA = '',
     SERVER_ERROR = '',
