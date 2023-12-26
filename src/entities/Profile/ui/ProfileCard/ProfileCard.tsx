@@ -16,6 +16,7 @@ interface ProfileCardProps {
 export const ProfileCard = ({ className }: ProfileCardProps) => {
     const { t } = useTranslation('profile');
     const data = useSelector(getProfileData);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const isLoading = useSelector(getProfileIsLoading);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const error = useSelector(getProfileError);

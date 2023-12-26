@@ -7,7 +7,7 @@ import ProfileIcon from 'shared/assets/icons/profile-20-20.svg';
 export interface SidebarItemType {
     path: string;
     text: string;
-    Icon?: React.VFC<React.SVGProps<SVGElement>>
+    Icon: React.VFC<React.SVGProps<SVGSVGElement>>;
 }
 
 export const SidebarItemList: SidebarItemType[] = [
