@@ -24,7 +24,6 @@ const reducers: ReducersList = {
 };
 
 const ProfilePage = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { t } = useTranslation('profile');
     const dispatch = useAppDispatch();
     const data = useSelector(getProfileForm);
