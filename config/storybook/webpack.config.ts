@@ -12,6 +12,10 @@ export default ({ config }: {config: webpack.Configuration}) => {
         src: path.resolve(__dirname, '..', '..', 'src'),
     };
     config!.resolve!.modules!.push(paths.src);
+    /*    config!.resolve!.modules?.push(
+        path.relative(__dirname, '../../src'),
+        'node_modules',
+    ); */
     config!.resolve!.extensions!.push('.ts', '.tsx');
 
     // eslint-disable-next-line no-param-reassign
@@ -30,6 +34,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config!.plugins!.push(new DefinePlugin({
         __IS_DEV__: true,
         __API__: '',
+        __PROJECT__: 'storybook',
     }));
 
     if (config!.resolve!.modules) {

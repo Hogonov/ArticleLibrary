@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { Provider } from 'react-redux';
 import { ReducersMapObject } from '@reduxjs/toolkit';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +10,7 @@ interface StoreProviderProps {
     initialState?: DeepPartial<StateSchema>
     asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>
 }
-export const StoreProvider: FC<StoreProviderProps> = (props) => {
+export const StoreProvider = (props: StoreProviderProps) => {
     const { children, initialState, asyncReducers } = props;
 
     const navigate = useNavigate();

@@ -18,6 +18,6 @@ export default (env: BuildEnv):webpack.Configuration => {
     const isDev = mode === 'development';
 
     return buildWebpackConfig({
-        mode, paths, isDev, port, apiUrl,
+        mode, paths, isDev, port, apiUrl, project: 'fronted',
     });
 };
