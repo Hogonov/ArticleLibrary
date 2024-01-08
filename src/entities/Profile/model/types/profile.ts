@@ -7,9 +7,11 @@ export enum ValidateProfileError {
     INCORRECT_USERNAME = 'INCORRECT_USERNAME',
     NO_DATA = 'NO_DATA',
     SERVER_ERROR = 'SERVER_ERROR',
+    NO_ID = 'NO_ID',
 }
 
 export interface Profile {
+    id?: string,
     first?: string,
     lastname?: string,
     age?: number,

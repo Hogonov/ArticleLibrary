@@ -9,6 +9,7 @@ export const validateProfileData = (profile?: Profile): ValidateProfileError[] =
         lastname,
         age,
         username,
+        id,
     } = profile;
 
     const errors: ValidateProfileError[] = [];
@@ -23,6 +24,9 @@ export const validateProfileData = (profile?: Profile): ValidateProfileError[] =
 
     if (!username) {
         errors.push(ValidateProfileError.INCORRECT_USERNAME);
+    }
+    if (!id) {
+        errors.push(ValidateProfileError.NO_ID);
     }
 
     return errors;
