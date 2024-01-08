@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { User } from 'entities/User';
+import AvatarImg from 'shared/assets/tests/storybook.jpg';
 import { Comment } from '../../model/types/comment';
 import { CommentList } from './CommentList';
 
@@ -7,12 +8,12 @@ const users: User[] = [
     {
         id: '1',
         username: 'admin',
-        avatar: 'https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg',
+        avatar: AvatarImg,
     },
     {
         id: '2',
         username: 'user',
-        avatar: 'https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg',
+        avatar: AvatarImg,
     },
 ];
 const comments: Comment[] = [

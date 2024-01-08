@@ -3,16 +3,22 @@ import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorato
 import { Theme } from 'app/providers/ThemeProvider';
 import StoreDecorator from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Article, ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
+import AvatarImg from 'shared/assets/tests/storybook.jpg';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 const data: Article = {
     id: '1',
     title: 'Javascript news',
     subtitle: 'Что нового в JS за 2022 год?',
-    img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
+    img: AvatarImg,
     views: 1022,
     createdAt: '26.02.2022',
     type: [ArticleType.IT],
+    user: {
+        id: '1',
+        username: 'Ulbi tv',
+        avatar: AvatarImg,
+    },
     blocks: [
         {
             id: '1',

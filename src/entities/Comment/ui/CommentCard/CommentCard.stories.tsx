@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Comment } from 'entities/Comment';
+import AvatarImg from 'shared/assets/tests/storybook.jpg';
 import { CommentCard } from './CommentCard';
 
 const comment: Comment = {
@@ -8,7 +9,7 @@ const comment: Comment = {
     user: {
         id: '2',
         username: 'user',
-        avatar: 'https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg',
+        avatar: AvatarImg,
     },
 };
 
