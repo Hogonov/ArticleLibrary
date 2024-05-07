@@ -26,7 +26,17 @@
     }
 }
 
-.sizeM {
+.size_s {
+    .title {
+        font: var(--font-m);
+    }
+
+    .text {
+        font: var(--font-s);
+    }
+}
+
+.size_m {
     .title {
         font: var(--font-l);
     }
@@ -36,7 +46,7 @@
     }
 }
 
-.sizeL {
+.size_l {
     .title {
         font: var(--font-xl);
     }
