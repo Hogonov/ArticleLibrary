@@ -6,6 +6,7 @@ import { Loader } from 'shared/ui/Loader/Loader';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Currency, CurrencySelect } from 'entities/Currency';
 import { Country, CountrySelect } from 'entities/Country';
+import { HStack, VStack } from 'shared/ui/Stack';
 import { Profile } from '../../model/types/profile';
 import cls from './ProfileCard.module.scss';
 
@@ -45,9 +46,9 @@ export const ProfileCard = (props: ProfileCardProps) => {
 
     if (isLoading) {
         return (
-            <div className={classNames(cls.ProfileCard, {}, [className, cls.loading])}>
+            <VStack max gap="8" className={classNames(cls.ProfileCard, {}, [className, cls.loading])}>
                 <Loader />
-            </div>
+            </VStack>
         );
     }
 
@@ -69,11 +70,11 @@ export const ProfileCard = (props: ProfileCardProps) => {
     };
 
     return (
-        <div className={classNames(cls.ProfileCard, mods, [className])}>
+        <VStack max gap="8" className={classNames(cls.ProfileCard, mods, [className])}>
             {data?.avatar && (
-                <div className={cls.avatarWrapper}>
+                <HStack justify="center" max className={cls.avatarWrapper}>
                     <Avatar src={data?.avatar} />
-                </div>
+                </HStack>
             )}
             <Input
                 value={data?.first}
@@ -129,6 +130,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 onChange={onChangeCountry}
                 readonly={readonly}
             />
-        </div>
+        </VStack>
     );
 };

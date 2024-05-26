@@ -595,6 +595,12 @@
       "userId": "1",
       "text": "python!!!",
       "id": "p5rMadd"
+    },
+    {
+      "articleId": "18",
+      "userId": "1",
+      "text": "1232131",
+      "id": "18IyTTA"
     }
   ],
   "users": [
@@ -619,7 +625,7 @@
       "first": "Александр",
       "lastname": "Цыпляев",
       "age": 24,
-      "currency": "RUB",
+      "currency": "USD",
       "country": "Kazahstan",
       "city": "Astana",
       "username": "admin",
