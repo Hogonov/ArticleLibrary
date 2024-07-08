@@ -4,7 +4,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import StoreDecorator from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Article, ArticleType } from 'entities/Article';
 import AvatarImg from 'shared/assets/tests/storybook.jpg';
-import { ArticleBlockType } from 'entities/Article/model/types/article';
+import { ArticleBlockType } from 'entities/Article/model/const/const';
 import { ArticleDetailsComments } from './ArticleDetailsComments';
 
 const data: Article = {

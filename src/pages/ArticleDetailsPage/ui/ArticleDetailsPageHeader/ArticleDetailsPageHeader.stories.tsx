@@ -1,9 +1,8 @@
 import { type Meta, type StoryObj } from '@storybook/react';
 import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Article, ArticleType } from 'entities/Article';
+import { Article, ArticleType, ArticleBlockType } from 'entities/Article';
 import AvatarImg from 'shared/assets/tests/storybook.jpg';
-import { ArticleBlockType } from 'entities/Article/model/types/article';
 import StoreDecorator from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ArticleDetailsPageHeader } from './ArticleDetailsPageHeader';
 
