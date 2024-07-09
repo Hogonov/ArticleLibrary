@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Comment } from 'entities/Comment';
-import AvatarImg from 'shared/assets/tests/storybook.jpg';
+import { Comment } from '@/entities/Comment';
+import AvatarImg from '@/shared/assets/tests/storybook.jpg';
 import { CommentCard } from './CommentCard';
 
 const comment: Comment = {
