@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import { ComponentRender } from 'shared/lib/tests/componentRender/componentRender';
+import { ComponentRender } from 'shared/lib/tests/componentRender/ComponentRender';
 import { Profile } from 'entities/Profile';
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
