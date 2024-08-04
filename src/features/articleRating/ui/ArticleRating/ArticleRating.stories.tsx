@@ -1,17 +1,28 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import ArticleRating from './ArticleRating';
+import StoreDecorator from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+import AvatarImg from '@/shared/assets/tests/storybook.jpg';
+import { UserRole } from '@/entities/User';
 
-export default {
-    title: 'shared/ArticleRating',
+const meta: Meta<typeof ArticleRating> = {
+    title: 'features/Article/ArticleRating',
     component: ArticleRating,
+    tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof ArticleRating>;
+    decorators: [StoreDecorator({
+        user: {
+            authData: {
+                id: '1',
+                username: 'TestUsername',
+                avatar: AvatarImg,
+                roles: [UserRole.ADMIN],
+            },
+        },
+    })],
+};
 
-const Template: ComponentStory<typeof ArticleRating> = (args) => <ArticleRating {...args} />;
+export default meta;
+type Story = StoryObj<typeof ArticleRating>;
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const PrimaryAdmin: Story = {};
