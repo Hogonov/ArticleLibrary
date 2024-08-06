@@ -19,6 +19,7 @@ const options = [
 ];
 
 export const CountrySelect = memo(({
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     className, value, onChange, readonly,
 }: CountrySelectProps) => {
     const { t } = useTranslation();

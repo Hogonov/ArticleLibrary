@@ -52,7 +52,9 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap', 'as'],
+                ignoreAttribute: [
+                    'border', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap', 'as',
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 120 }],
@@ -64,7 +66,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'course-fsd-plugin/path-checker': 'error',
+        'course-fsd-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

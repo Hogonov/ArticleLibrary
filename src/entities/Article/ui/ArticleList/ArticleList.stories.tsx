@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import AvatarImg from '@/shared/assets/tests/storybook.jpg';
-import { ArticleView } from '@/entities/Article';
 import { ArticleList } from './ArticleList';
 import { Article } from '../../model/types/article';
+import { ArticleView } from '../../model/const/const';
 
 const article = {
     id: '1',

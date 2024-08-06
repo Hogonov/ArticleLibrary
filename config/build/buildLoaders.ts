@@ -6,6 +6,7 @@ import { buildBabelLoader } from './loaders/buildBabelLoader';
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     const { isDev } = options;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
