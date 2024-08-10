@@ -67,6 +67,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'course-fsd-plugin/path-checker': ['error', { alias: '@' }],
+        'course-fsd-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

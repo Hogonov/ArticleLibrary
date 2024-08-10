@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Comment } from '../../model/types/Comment';
+import type { Comment } from '../../model/types/comment';
 import AvatarImg from '@/shared/assets/tests/storybook.jpg';
 import { CommentCard } from './CommentCard';
 
