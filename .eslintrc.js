@@ -8,6 +8,9 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -23,10 +26,13 @@ module.exports = {
         'i18next',
         'react-hooks',
         'course-fsd-plugin',
+        'unused-imports',
+        'import',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
+        'unused-imports/no-unused-imports': 'error',
         indent: [2, 4],
         'react/jsx-filename-extension': [2,
             {
@@ -78,6 +84,31 @@ module.exports = {
             alias: '@',
             testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
         }],
+        'import/order': [
+            'error',
+            {
+                groups: ['builtin', 'external', 'internal'],
+                pathGroups: [
+                    {
+                        pattern: '@/**',
+                        group: 'external',
+                        position: 'after',
+                    },
+                ],
+                'newlines-between': 'always',
+                alphabetize: {
+                    order: 'asc',
+                    caseInsensitive: false,
+                },
+            },
+        ],
+    },
+    settings: {
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            },
+        },
     },
     globals: {
         __IS_DEV__: true,

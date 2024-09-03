@@ -1,11 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ThemeDecorator from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import StoreDecorator from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Currency } from '@/entities/Currency';
+
 import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
 import AvatarImg from '@/shared/assets/tests/storybook.jpg';
-import { EditableProfileCard } from './EditableProfileCard';
+import StoreDecorator from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+import ThemeDecorator from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '@/shared/const/theme';
+
+import { EditableProfileCard } from './EditableProfileCard';
 
 const meta: Meta<typeof EditableProfileCard> = {
     title: 'features/editableProfileCard/EditableProfileCard',

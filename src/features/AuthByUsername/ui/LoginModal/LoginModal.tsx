@@ -1,9 +1,11 @@
 import { FC, Suspense } from 'react';
+
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Modal } from '@/shared/ui/Modal';
 import { Loader } from '@/shared/ui/Loader';
-import { LoginFormLazy } from '../LoginForm/LoginForm.lazy';
+import { Modal } from '@/shared/ui/Modal';
+
 import cls from './LoginModal.module.scss';
+import { LoginFormLazy } from '../LoginForm/LoginForm.lazy';
 
 interface LoginModalProps {
     className?: string,

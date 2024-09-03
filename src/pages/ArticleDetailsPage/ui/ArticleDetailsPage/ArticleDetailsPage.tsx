@@ -1,22 +1,24 @@
 import { memo } from 'react';
-import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { classNames } from '@/shared/lib/classNames/classNames';
+import { useParams } from 'react-router-dom';
+
 import { ArticleDetails } from '@/entities/Article';
+import { ArticleRating } from '@/features/articleRating';
+import { ArticleRecommendationsList } from '@/features/articleRecommendationsList';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Page } from '@/widgets/Page';
-import { ArticleRecommendationsList } from '@/features/articleRecommendationsList';
 import { VStack } from '@/shared/ui/Stack';
-import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
+import { Page } from '@/widgets/Page';
+
 import cls from './ArticleDetailsPage.module.scss';
 import {
     fetchArticleRecommendations,
 } from '../../model/services/fetchArticleRecommendations/fetchArticleRecommendations';
+import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { articleDetailsPageReducer } from '../../model/slices';
-import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { ArticleDetailsComments } from '../ArticleDetailsComments/ArticleDetailsComments';
-import { ArticleRating } from '@/features/articleRating';
+import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 
 interface ArticleDetailsPageProps {
     className?: string;

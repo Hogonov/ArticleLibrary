@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ArticleView } from '../../model/const/const';
+
 import { ArticleViewSelector } from './ArticleViewSelector';
+import { ArticleView } from '../../model/const/const';
 
 const meta: Meta<typeof ArticleViewSelector> = {
     title: 'entities/Article/ArticleViewSelector',

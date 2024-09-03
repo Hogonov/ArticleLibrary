@@ -1,8 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import AvatarImg from '@/shared/assets/tests/storybook.jpg';
+
 import { ArticleList } from './ArticleList';
-import { Article } from '../../model/types/article';
 import { ArticleView } from '../../model/const/const';
+import { Article } from '../../model/types/article';
 
 const article = {
     id: '1',

@@ -1,7 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import type { Comment } from '../../model/types/comment';
+
 import AvatarImg from '@/shared/assets/tests/storybook.jpg';
+
 import { CommentCard } from './CommentCard';
+import type { Comment } from '../../model/types/comment';
 
 const comment: Comment = {
     id: '1',

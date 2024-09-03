@@ -1,8 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { AvatarDropdown } from './AvatarDropdown';
-import StoreDecorator from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import AvatarImg from '@/shared/assets/tests/storybook.jpg';
+
 import { UserRole } from '@/entities/User';
+import AvatarImg from '@/shared/assets/tests/storybook.jpg';
+import StoreDecorator from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+
+import { AvatarDropdown } from './AvatarDropdown';
 
 const userData = {
     id: '1',

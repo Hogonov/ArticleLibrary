@@ -1,4 +1,5 @@
 import { Decorator } from '@storybook/react';
+
 // eslint-disable-next-line course-fsd-plugin/layer-imports
 import { ThemeProvider } from '@/app/providers/ThemeProvider';
 import { Theme } from '@/shared/const/theme';

@@ -1,7 +1,8 @@
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
-import { ValidateProfileError } from '../../const/const';
+
 import { validateProfileData } from './validateProfileData';
+import { ValidateProfileError } from '../../const/const';
 
 const data = {
     username: 'admin',
