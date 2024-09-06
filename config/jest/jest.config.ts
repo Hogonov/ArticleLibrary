@@ -49,7 +49,9 @@ export default {
         '@shared/(.*)': '<rootDir>/src/shared/$1',
         '@pages/(.*)': '<rootDir>/src/pages/$1',
         '@widgets/(.*)': '<rootDir>/src/widgets/$1',
+        '@features/(.*)': '<rootDir>/src/features/$1',
         axios: 'axios/dist/node/axios.cjs',
+        '^@/(.*)$': '<rootDir>/src/$1',
     },
     reporters: [
         'default',
