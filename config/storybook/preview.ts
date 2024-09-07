@@ -1,6 +1,6 @@
+import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
 
-import ThemeDecorator from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '@/shared/const/theme';
 
 import RouteDecorator from '../../src/shared/config/storybook/RouteDecorator/RouteDecorator';
@@ -18,7 +18,20 @@ const preview: Preview = {
         },
         layout: 'fullscreen',
     },
-    decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouteDecorator, SuspenseDecorator],
+    decorators: [
+        StyleDecorator,
+        withThemeByClassName({
+            themes: {
+                light: `app ${Theme.LIGHT}`,
+                dark: `app ${Theme.DARK}`,
+                purple_theme: `app ${Theme.PURPLE_DARK}`,
+            },
+            defaultTheme: 'light',
+        }), /* ThemeDecorator(Theme.LIGHT) */
+
+        RouteDecorator,
+        SuspenseDecorator,
+    ],
 };
 
 export default preview;

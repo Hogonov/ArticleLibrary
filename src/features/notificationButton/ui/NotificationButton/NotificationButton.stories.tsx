@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import withMock from 'storybook-addon-mock';
 
 import StoreDecorator from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import ThemeDecorator from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
@@ -13,7 +12,7 @@ const meta: Meta<typeof NotificationButton> = {
     tags: ['autodocs'],
     argTypes: {
     },
-    decorators: [StoreDecorator({}), withMock],
+    decorators: [StoreDecorator({})],
     parameters: {
         mockData: [{
             url: `${__API__}/notifications`,
