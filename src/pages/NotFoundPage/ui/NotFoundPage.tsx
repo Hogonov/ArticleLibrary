@@ -9,13 +9,15 @@ import cls from './NotFoundPage.module.scss';
 const NotFoundPage = () => {
     const { t } = useTranslation('translation');
     return (
-        <Page className={
-            classNames(
-                cls.NotFoundPage,
-                {},
-                [],
-            )
-        }
+        <Page
+            className={
+                classNames(
+                    cls.NotFoundPage,
+                    {},
+                    [],
+                )
+            }
+            data-testid="NotFoundPage"
         >
             {t('Страница не найдена')}
         </Page>
