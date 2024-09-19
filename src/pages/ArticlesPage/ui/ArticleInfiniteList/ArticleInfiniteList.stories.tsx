@@ -53,8 +53,7 @@ const meta: Meta<typeof ArticleInfiniteList> = {
     title: 'pages/ArticlesPage/ArticleInfiniteList',
     component: ArticleInfiniteList,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
     decorators: [
         StoreDecorator({
             articleDetails: {
@@ -67,8 +66,7 @@ const meta: Meta<typeof ArticleInfiniteList> = {
 export default meta;
 type Story = StoryObj<typeof ArticleInfiniteList>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

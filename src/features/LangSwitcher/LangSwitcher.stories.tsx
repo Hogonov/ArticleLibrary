@@ -9,15 +9,13 @@ const meta: Meta<typeof LangSwitcher> = {
     title: 'widgets/LangSwitcher',
     component: LangSwitcher,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;
 type Story = StoryObj<typeof LangSwitcher>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

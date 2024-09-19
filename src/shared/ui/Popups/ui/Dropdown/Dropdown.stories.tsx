@@ -1,31 +1,31 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 
 import { Dropdown } from './Dropdown';
 import { Button } from '../../../Button/Button';
 
-export default {
+const meta: Meta<typeof Dropdown> = {
     title: 'shared/Dropdown',
     component: Dropdown,
-    argTypes: {
-        backgroundColor: { control: 'color' },
+    tags: ['autodocs'],
+    argTypes: {},
+    args: {
+        trigger: <Button>Open</Button>,
+        items: [
+            {
+                content: 'first',
+            },
+            {
+                content: 'second',
+            },
+            {
+                content: 'third',
+            },
+        ],
     },
-} as ComponentMeta<typeof Dropdown>;
-
-const Template: ComponentStory<typeof Dropdown> = (args) => <Dropdown {...args} />;
-
-export const Normal = Template.bind({});
-Normal.args = {
-    trigger: <Button>Open</Button>,
-    items: [
-        {
-            content: 'first',
-        },
-        {
-            content: 'second',
-        },
-        {
-            content: 'third',
-        },
-    ],
 };
+
+export default meta;
+type Story = StoryObj<typeof Dropdown>;
+
+export const Primary: Story = {};

@@ -6,11 +6,13 @@ const meta: Meta<typeof NotificationItem> = {
     title: 'entities/Notification/NotificationItem',
     component: NotificationItem,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
     args: {
         item: {
-            id: '1', href: '/', title: 'Test', description: 'Test description',
+            id: '1',
+            href: '/',
+            title: 'Test',
+            description: 'Test description',
         },
     },
 };

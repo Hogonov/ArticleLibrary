@@ -9,15 +9,13 @@ const meta: Meta<typeof ThemeSwitcher> = {
     title: 'widgets/ThemeSwitcher',
     component: ThemeSwitcher,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;
 type Story = StoryObj<typeof ThemeSwitcher>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

@@ -34,8 +34,5 @@ export const Dark: Story = {
 };
 
 export const NoAuth: Story = {
-    decorators: [
-        ThemeDecorator(Theme.LIGHT),
-        StoreDecorator({}),
-    ],
+    decorators: [ThemeDecorator(Theme.LIGHT), StoreDecorator({})],
 };

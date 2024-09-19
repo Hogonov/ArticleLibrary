@@ -10,16 +10,14 @@ const meta: Meta<typeof ArticleRecommendationsList> = {
     title: 'features/Article/ArticleRecommendationsList',
     component: ArticleRecommendationsList,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
     decorators: [StoreDecorator({})],
 };
 
 export default meta;
 type Story = StoryObj<typeof ArticleRecommendationsList>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

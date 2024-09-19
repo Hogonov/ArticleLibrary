@@ -11,7 +11,8 @@ const meta: Meta<typeof Modal> = {
     tags: ['autodocs'],
     argTypes: {},
     args: {
-        children: 'jdiw djwidhjiw jdwijdiwjd jdiwjidjw jdiwj idj w ndiwinaidnwa ndiwnadnwqaidn winai dni wnaidn wiand iwanid nwia ndi wa',
+        children:
+      'jdiw djwidhjiw jdwijdiwjd jdiwjidjw jdiwj idj w ndiwinaidnwa ndiwnadnwqaidn winai dni wnaidn wiand iwanid nwia ndi wa',
         isOpen: true,
     },
 };
@@ -19,8 +20,7 @@ const meta: Meta<typeof Modal> = {
 export default meta;
 type Story = StoryObj<typeof Modal>;
 
-export const Primary: Story = {
-};
+export const Primary: Story = {};
 
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],

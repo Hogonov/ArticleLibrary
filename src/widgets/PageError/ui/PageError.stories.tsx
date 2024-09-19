@@ -9,15 +9,13 @@ const meta: Meta<typeof PageError> = {
     title: 'widgets/PageError',
     component: PageError,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;
 type Story = StoryObj<typeof PageError>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

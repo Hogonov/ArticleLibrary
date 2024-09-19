@@ -12,9 +12,7 @@ const meta: Meta<typeof AddCommentForm> = {
     argTypes: {
         onSendComment: action('onSendComment'),
     },
-    decorators: [
-        StoreDecorator({}),
-    ],
+    decorators: [StoreDecorator({})],
 };
 
 export default meta;

@@ -17,34 +17,39 @@ const meta: Meta<typeof AvatarDropdown> = {
     title: 'features/Avatar/AvatarDropdown',
     component: AvatarDropdown,
     tags: ['autodocs'],
-    argTypes: {
-    },
-    decorators: [StoreDecorator({
-        user: {
-            authData: {
-                id: '1',
-                username: 'TestUsername',
-                avatar: AvatarImg,
-                roles: [UserRole.ADMIN],
+    argTypes: {},
+    decorators: [
+        StoreDecorator({
+            user: {
+                authData: {
+                    id: '1',
+                    username: 'TestUsername',
+                    avatar: AvatarImg,
+                    roles: [UserRole.ADMIN],
+                },
             },
-        },
-    })],
+        }),
+    ],
 };
 
 export default meta;
 type Story = StoryObj<typeof AvatarDropdown>;
 
 export const PrimaryAdmin: Story = {
-    decorators: [StoreDecorator({
-        user: {
-            authData: { ...userData, roles: [UserRole.ADMIN] },
-        },
-    })],
+    decorators: [
+        StoreDecorator({
+            user: {
+                authData: { ...userData, roles: [UserRole.ADMIN] },
+            },
+        }),
+    ],
 };
 export const PrimaryUser: Story = {
-    decorators: [StoreDecorator({
-        user: {
-            authData: { ...userData, roles: [UserRole.USER] },
-        },
-    })],
+    decorators: [
+        StoreDecorator({
+            user: {
+                authData: { ...userData, roles: [UserRole.USER] },
+            },
+        }),
+    ],
 };

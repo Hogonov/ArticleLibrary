@@ -54,6 +54,7 @@ const meta: Meta<typeof ArticleDetails> = {
     title: 'entities/ArticleDetails',
     component: ArticleDetails,
     tags: ['autodocs'],
+    argTypes: {},
     decorators: [
         StoreDecorator({
             articleDetails: {
@@ -68,17 +69,23 @@ type Story = StoryObj<typeof ArticleDetails>;
 
 export const Primary: Story = {};
 export const Dark: Story = { decorators: [ThemeDecorator(Theme.DARK)] };
+
 export const Loading: Story = {
-    decorators: [StoreDecorator({
-        articleDetails: {
-            isLoading: true,
-        },
-    })],
+    decorators: [
+        StoreDecorator({
+            articleDetails: {
+                isLoading: true,
+            },
+        }),
+    ],
 };
+
 export const Error: Story = {
-    decorators: [StoreDecorator({
-        articleDetails: {
-            error: 'error',
-        },
-    })],
+    decorators: [
+        StoreDecorator({
+            articleDetails: {
+                error: 'error',
+            },
+        }),
+    ],
 };

@@ -6,7 +6,7 @@ const meta: Meta<typeof ArticleSortSelector> = {
     title: 'entities/Article/ArticleSortSelector',
     component: ArticleSortSelector,
     tags: ['autodocs'],
-    argTypes: { },
+    argTypes: {},
     args: {},
 };
 

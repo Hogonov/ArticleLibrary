@@ -9,15 +9,13 @@ const meta: Meta<typeof Loader> = {
     title: 'shared/Loader',
     component: Loader,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;
 type Story = StoryObj<typeof Loader>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

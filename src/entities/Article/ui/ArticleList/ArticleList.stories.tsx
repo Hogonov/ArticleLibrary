@@ -18,12 +18,7 @@ const article = {
         username: 'Ulbi tv',
         avatar: AvatarImg,
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'POLITICS',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
     blocks: [
         {
             id: '1',
@@ -90,15 +85,12 @@ const meta: Meta<typeof ArticleList> = {
     title: 'entities/ArticleList',
     component: ArticleList,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
     args: {
-        articles: new Array(9)
-            .fill(0)
-            .map((item, index) => ({
-                ...article,
-                id: String(index),
-            })),
+        articles: new Array(9).fill(0).map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
     },
 };
 

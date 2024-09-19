@@ -53,14 +53,12 @@ const meta: Meta<typeof ArticleDetailsComments> = {
     title: 'pages/ArticleDetailsPage/ArticleDetailsComments',
     component: ArticleDetailsComments,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
     decorators: [
         StoreDecorator({
             articleDetails: {
                 data,
             },
-
         }),
     ],
 };
@@ -68,8 +66,7 @@ const meta: Meta<typeof ArticleDetailsComments> = {
 export default meta;
 type Story = StoryObj<typeof ArticleDetailsComments>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

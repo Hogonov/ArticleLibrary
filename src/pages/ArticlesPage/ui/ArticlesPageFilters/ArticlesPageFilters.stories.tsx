@@ -10,12 +10,10 @@ const meta: Meta<typeof ArticlesPageFilters> = {
     title: 'pages/Article/ArticlesPageFilters',
     component: ArticlesPageFilters,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
     decorators: [
         StoreDecorator({
-            articleDetails: {
-            },
+            articleDetails: {},
         }),
     ],
 };
@@ -23,8 +21,7 @@ const meta: Meta<typeof ArticlesPageFilters> = {
 export default meta;
 type Story = StoryObj<typeof ArticlesPageFilters>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

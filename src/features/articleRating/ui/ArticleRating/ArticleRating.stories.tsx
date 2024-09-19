@@ -10,18 +10,19 @@ const meta: Meta<typeof ArticleRating> = {
     title: 'features/Article/ArticleRating',
     component: ArticleRating,
     tags: ['autodocs'],
-    argTypes: {
-    },
-    decorators: [StoreDecorator({
-        user: {
-            authData: {
-                id: '1',
-                username: 'TestUsername',
-                avatar: AvatarImg,
-                roles: [UserRole.ADMIN],
+    argTypes: {},
+    decorators: [
+        StoreDecorator({
+            user: {
+                authData: {
+                    id: '1',
+                    username: 'TestUsername',
+                    avatar: AvatarImg,
+                    roles: [UserRole.ADMIN],
+                },
             },
-        },
-    })],
+        }),
+    ],
 };
 
 export default meta;

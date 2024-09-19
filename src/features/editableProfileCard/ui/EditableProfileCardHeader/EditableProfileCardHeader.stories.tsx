@@ -13,29 +13,29 @@ const meta: Meta<typeof EditableProfileCardHeader> = {
     title: 'features/editableProfileCard/EditableProfileCardHeader',
     component: EditableProfileCardHeader,
     tags: ['autodocs'],
-    argTypes: {
-    },
-    decorators: [StoreDecorator({
-        profile: {
-            form: {
-                first: 'Александр',
-                lastname: 'Цыпляев',
-                age: 24,
-                currency: Currency.EUR,
-                country: Country.Kazakhstan,
-                city: 'Астана',
-                username: 'admin',
-                avatar: AvatarImg,
+    argTypes: {},
+    decorators: [
+        StoreDecorator({
+            profile: {
+                form: {
+                    first: 'Александр',
+                    lastname: 'Цыпляев',
+                    age: 24,
+                    currency: Currency.EUR,
+                    country: Country.Kazakhstan,
+                    city: 'Астана',
+                    username: 'admin',
+                    avatar: AvatarImg,
+                },
             },
-        },
-    })],
+        }),
+    ],
 };
 
 export default meta;
 type Story = StoryObj<typeof EditableProfileCardHeader>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

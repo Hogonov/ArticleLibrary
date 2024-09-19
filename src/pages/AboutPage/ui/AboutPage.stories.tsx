@@ -9,15 +9,13 @@ const meta: Meta<typeof AboutPage> = {
     title: 'pages/AboutPage',
     component: AboutPage,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;
 type Story = StoryObj<typeof AboutPage>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

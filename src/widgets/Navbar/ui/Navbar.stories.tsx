@@ -10,8 +10,7 @@ const meta: Meta<typeof Navbar> = {
     title: 'widgets/Navbar',
     component: Navbar,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;
@@ -21,17 +20,15 @@ export const Light: Story = {
     decorators: [StoreDecorator({})],
 };
 export const Dark: Story = {
-    decorators: [
-        ThemeDecorator(Theme.DARK),
-        StoreDecorator({}),
-    ],
-
+    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({})],
 };
 
 export const LightAuth: Story = {
-    decorators: [StoreDecorator({
-        user: { authData: {} },
-    })],
+    decorators: [
+        StoreDecorator({
+            user: { authData: {} },
+        }),
+    ],
 };
 
 export const DarkAuth: Story = {
@@ -41,5 +38,4 @@ export const DarkAuth: Story = {
             user: { authData: {} },
         }),
     ],
-
 };

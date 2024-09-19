@@ -65,8 +65,7 @@ const meta: Meta<typeof ArticleDetailsPageHeader> = {
 export default meta;
 type Story = StoryObj<typeof ArticleDetailsPageHeader>;
 
-export const Light: Story = {
-};
+export const Light: Story = {};
 export const Dark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };

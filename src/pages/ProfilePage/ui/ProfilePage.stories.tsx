@@ -20,20 +20,22 @@ export default meta;
 type Story = StoryObj<typeof ProfilePage>;
 
 export const Light: Story = {
-    decorators: [StoreDecorator({
-        profile: {
-            form: {
-                first: 'Александр',
-                lastname: 'Цыпляев',
-                age: 24,
-                currency: Currency.EUR,
-                country: Country.Kazakhstan,
-                city: 'Астана',
-                username: 'admin',
-                avatar: AvatarImg,
+    decorators: [
+        StoreDecorator({
+            profile: {
+                form: {
+                    first: 'Александр',
+                    lastname: 'Цыпляев',
+                    age: 24,
+                    currency: Currency.EUR,
+                    country: Country.Kazakhstan,
+                    city: 'Астана',
+                    username: 'admin',
+                    avatar: AvatarImg,
+                },
             },
-        },
-    })],
+        }),
+    ],
 };
 export const Dark: Story = {
     decorators: [

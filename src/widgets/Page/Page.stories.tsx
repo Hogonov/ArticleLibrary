@@ -13,9 +13,7 @@ const meta: Meta<typeof Page> = {
     args: {
         children: <Text title="test" text="text text" />,
     },
-    decorators: [
-        StoreDecorator({}),
-    ],
+    decorators: [StoreDecorator({})],
 };
 
 export default meta;

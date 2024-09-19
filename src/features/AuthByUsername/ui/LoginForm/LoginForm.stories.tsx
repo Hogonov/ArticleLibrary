@@ -9,13 +9,12 @@ const meta: Meta<typeof LoginForm> = {
     component: LoginForm,
     tags: ['autodocs'],
     argTypes: {},
-    args: {
-
-    },
+    args: {},
     decorators: [
         StoreDecorator({
             loginForm: {
-                username: '123', password: '123',
+                username: '123',
+                password: '123',
             },
         }),
     ],
@@ -24,8 +23,7 @@ const meta: Meta<typeof LoginForm> = {
 export default meta;
 type Story = StoryObj<typeof LoginForm>;
 
-export const Primary: Story = {
-};
+export const Primary: Story = {};
 
 export const WithError: Story = {
     decorators: [

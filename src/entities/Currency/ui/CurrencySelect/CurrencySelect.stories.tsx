@@ -6,8 +6,7 @@ const meta: Meta<typeof CurrencySelect> = {
     title: 'entities/CurrencySelect',
     component: CurrencySelect,
     tags: ['autodocs'],
-    argTypes: {
-    },
+    argTypes: {},
 };
 
 export default meta;

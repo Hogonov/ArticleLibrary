@@ -6,7 +6,7 @@ const meta: Meta<typeof ArticleTypeTabs> = {
     title: 'entities/Article/ArticleTypeTabs',
     component: ArticleTypeTabs,
     tags: ['autodocs'],
-    argTypes: { },
+    argTypes: {},
     args: {},
 };
 

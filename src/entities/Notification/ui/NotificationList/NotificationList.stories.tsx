@@ -8,11 +8,8 @@ const meta: Meta<typeof NotificationList> = {
     title: 'entities/Notification/NotificationList',
     component: NotificationList,
     tags: ['autodocs'],
-    argTypes: {
-    },
-    decorators: [
-        StoreDecorator({}),
-    ],
+    argTypes: {},
+    decorators: [StoreDecorator({})],
     parameters: {
         mockData: [
             {
