@@ -6,8 +6,7 @@ import { Loader } from '@/shared/ui/Loader';
 import cls from './PageLoader.module.scss';
 
 interface PageLoaderProps {
-    className?: string,
-
+    className?: string;
 }
 export const PageLoader: FC<PageLoaderProps> = (props) => {
     const { className } = props;

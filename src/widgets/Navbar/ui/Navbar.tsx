@@ -16,7 +16,7 @@ import { Text, TextTheme } from '@/shared/ui/Text';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
-    className?: string,
+    className?: string;
 }
 
 export const Navbar = memo((props: NavbarProps) => {
@@ -39,7 +39,7 @@ export const Navbar = memo((props: NavbarProps) => {
             <header className={classNames(cls.Navbar, {}, [className])}>
                 <Text
                     className={cls.appName}
-                    title={t('Alex\'s App')}
+                    title={t("Alex's App")}
                     theme={TextTheme.INVERTED}
                 />
                 <AppLink
@@ -60,13 +60,15 @@ export const Navbar = memo((props: NavbarProps) => {
     return (
         <header className={classNames(cls.Navbar, {}, [className])}>
             <div className={cls.links}>
-                <Button theme={ButtonTheme.CLEAR_INVERTED} onClick={onOpenModal}>{t('Войти')}</Button>
+                <Button
+                    theme={ButtonTheme.CLEAR_INVERTED}
+                    onClick={onOpenModal}
+                >
+                    {t('Войти')}
+                </Button>
             </div>
             {isAuthModal && (
-                <LoginModal
-                    isOpen={isAuthModal}
-                    onClose={onCloseModal}
-                />
+                <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
             )}
         </header>
     );

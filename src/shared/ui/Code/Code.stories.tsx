@@ -12,20 +12,20 @@ const meta: Meta<typeof Code> = {
     argTypes: {},
     args: {
         text:
-      "import type { Meta, StoryObj } from '@storybook/react';\n"
-      + "import { Code } from './Code';\n"
-      + '\n'
-      + 'const meta: Meta<typeof Code> = {\n'
-      + "    title: 'widgets/Code',\n"
-      + '    component: Code,\n'
-      + "    tags: ['autodocs'],\n"
-      + '    argTypes: {},\n'
-      + '};\n'
-      + '\n'
-      + 'export default meta;\n'
-      + 'type Story = StoryObj<typeof Code>;\n'
-      + '\n'
-      + 'export const Primary: Story = {};\n',
+            "import type { Meta, StoryObj } from '@storybook/react';\n" +
+            "import { Code } from './Code';\n" +
+            '\n' +
+            'const meta: Meta<typeof Code> = {\n' +
+            "    title: 'widgets/Code',\n" +
+            '    component: Code,\n' +
+            "    tags: ['autodocs'],\n" +
+            '    argTypes: {},\n' +
+            '};\n' +
+            '\n' +
+            'export default meta;\n' +
+            'type Story = StoryObj<typeof Code>;\n' +
+            '\n' +
+            'export const Primary: Story = {};\n',
     },
 };
 

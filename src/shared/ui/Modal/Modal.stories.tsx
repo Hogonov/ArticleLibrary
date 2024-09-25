@@ -12,7 +12,7 @@ const meta: Meta<typeof Modal> = {
     argTypes: {},
     args: {
         children:
-      'jdiw djwidhjiw jdwijdiwjd jdiwjidjw jdiwj idj w ndiwinaidnwa ndiwnadnwqaidn winai dni wnaidn wiand iwanid nwia ndi wa',
+            'jdiw djwidhjiw jdwijdiwjd jdiwjidjw jdiwj idj w ndiwinaidnwa ndiwnadnwqaidn winai dni wnaidn wiand iwanid nwia ndi wa',
         isOpen: true,
     },
 };

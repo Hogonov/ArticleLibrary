@@ -5,7 +5,7 @@ import webpack from 'webpack';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
 import { BuildEnv, BuildPath } from './config/build/types/config';
 
-export default (env: BuildEnv):webpack.Configuration => {
+export default (env: BuildEnv): webpack.Configuration => {
     const paths: BuildPath = {
         entry: path.resolve(__dirname, 'src', 'index.tsx'),
         build: path.resolve(__dirname, 'build'),
@@ -22,6 +22,11 @@ export default (env: BuildEnv):webpack.Configuration => {
     const isDev = mode === 'development';
 
     return buildWebpackConfig({
-        mode, paths, isDev, port, apiUrl, project: 'fronted',
+        mode,
+        paths,
+        isDev,
+        port,
+        apiUrl,
+        project: 'fronted',
     });
 };

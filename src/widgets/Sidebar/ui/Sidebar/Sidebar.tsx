@@ -12,7 +12,7 @@ import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
 interface SidebarProps {
-    className?: string,
+    className?: string;
 }
 
 export const Sidebar = memo((props: SidebarProps) => {
@@ -26,15 +26,13 @@ export const Sidebar = memo((props: SidebarProps) => {
     return (
         <aside
             data-testid="sidebar"
-            className={
-                classNames(
-                    cls.Sidebar,
-                    {
-                        [cls.collapsed]: collapsed,
-                    },
-                    [className],
-                )
-            }
+            className={classNames(
+                cls.Sidebar,
+                {
+                    [cls.collapsed]: collapsed,
+                },
+                [className],
+            )}
         >
             <Button
                 data-testid="sidebar-toggle"
@@ -48,7 +46,11 @@ export const Sidebar = memo((props: SidebarProps) => {
             </Button>
             <VStack role="navigation" gap="8" className={cls.items}>
                 {sidebarItemsList.map((item) => (
-                    <SidebarItem item={item} collapsed={collapsed} key={item.path} />
+                    <SidebarItem
+                        item={item}
+                        collapsed={collapsed}
+                        key={item.path}
+                    />
                 ))}
             </VStack>
 

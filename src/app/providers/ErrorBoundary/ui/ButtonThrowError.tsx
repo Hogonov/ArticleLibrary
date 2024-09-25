@@ -16,9 +16,5 @@ export const ButtonThrowError: FC = () => {
             throw new Error();
         }
     }, [error]);
-    return (
-        <Button onClick={onThrowError}>
-            {t('Выбросить ошибку')}
-        </Button>
-    );
+    return <Button onClick={onThrowError}>{t('Выбросить ошибку')}</Button>;
 };

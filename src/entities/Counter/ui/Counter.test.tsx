@@ -6,11 +6,13 @@ import { Counter } from './Counter';
 
 describe('Counter', () => {
     test('test render', () => {
-        ComponentRender(<Counter />, { initialState: { counter: { value: 10 } } });
+        ComponentRender(<Counter />, {
+            initialState: { counter: { value: 10 } },
+        });
         expect(screen.getByTestId('value-title')).toHaveTextContent('10');
     });
 
-/*    test('increment', () => {
+    /*    test('increment', () => {
         ComponentRender(<Counter />, { initialState: { counter: { value: 10 } } });
         const toggleBtn = screen.getByTestId('increment-btn');
         expect(screen.getByTestId('value-title')).toBeInTheDocument();

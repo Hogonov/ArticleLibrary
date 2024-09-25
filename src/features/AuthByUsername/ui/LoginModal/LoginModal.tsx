@@ -8,16 +8,12 @@ import cls from './LoginModal.module.scss';
 import { LoginFormLazy } from '../LoginForm/LoginForm.lazy';
 
 interface LoginModalProps {
-    className?: string,
+    className?: string;
     isOpen: boolean;
     onClose: () => void;
 }
 export const LoginModal: FC<LoginModalProps> = (props) => {
-    const {
-        className,
-        isOpen,
-        onClose,
-    } = props;
+    const { className, isOpen, onClose } = props;
     return (
         <Modal
             isOpen={isOpen}

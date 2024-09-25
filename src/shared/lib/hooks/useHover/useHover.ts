@@ -6,7 +6,7 @@ interface UseHoverBind {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-type UseHoverResult = [boolean, UseHoverBind]
+type UseHoverResult = [boolean, UseHoverBind];
 
 export const useHover = () => {
     const [isHover, setIsHover] = useState(false);
@@ -19,11 +19,14 @@ export const useHover = () => {
         setIsHover(false);
     }, []);
 
-    return useMemo(() => [
-        isHover,
-        {
-            onMouseEnter,
-            onMouseLeave,
-        },
-    ], [isHover, onMouseEnter, onMouseLeave]);
+    return useMemo(
+        () => [
+            isHover,
+            {
+                onMouseEnter,
+                onMouseLeave,
+            },
+        ],
+        [isHover, onMouseEnter, onMouseLeave],
+    );
 };

@@ -27,7 +27,7 @@ const preview: Preview = {
                 purple_theme: `app ${Theme.PURPLE_DARK}`,
             },
             defaultTheme: 'light',
-        }), /* ThemeDecorator(Theme.LIGHT) */
+        }) /* ThemeDecorator(Theme.LIGHT) */,
 
         RouteDecorator,
         SuspenseDecorator,

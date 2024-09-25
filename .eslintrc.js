@@ -11,6 +11,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
+        'prettier',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -30,11 +31,9 @@ module.exports = {
         'import',
     ],
     rules: {
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
         'unused-imports/no-unused-imports': 'error',
-        indent: [2, 4],
-        'react/jsx-filename-extension': [2,
+        'react/jsx-filename-extension': [
+            2,
             {
                 extensions: ['.js', '.jsx', '.tsx'],
             },
@@ -59,7 +58,16 @@ module.exports = {
             {
                 markupOnly: true,
                 ignoreAttribute: [
-                    'border', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap', 'as',
+                    'border',
+                    'role',
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'direction',
+                    'gap',
+                    'as',
                 ],
             },
         ],
@@ -80,10 +88,17 @@ module.exports = {
                 ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
             },
         ],
-        'course-fsd-plugin/public-api-imports': ['error', {
-            alias: '@',
-            testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
-        }],
+        'course-fsd-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: [
+                    '**/*.test.*',
+                    '**/*.story.*',
+                    '**/StoreDecorator.tsx',
+                ],
+            },
+        ],
         'import/order': [
             'error',
             {
@@ -102,6 +117,7 @@ module.exports = {
                 },
             },
         ],
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
     },
     settings: {
         'import/resolver': {
