@@ -38,7 +38,10 @@
         "compilerOptions": {
             "module": "CommonJS"
         },
-        "exclude": ["**/*.cy.ts*"],
+        "exclude": [
+            "**/*.cy.ts*",
+            "**/*.test.tsx",
+        ],
         "include": [
             "./config/jest/setupTests.ts",
             "./src/**/*.ts",
