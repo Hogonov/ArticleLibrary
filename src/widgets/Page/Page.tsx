@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { StateSchema } from '@/app/providers/StoreProvider';
 import { getUIScrollByPath, uiActions } from '@/features/UI';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { toggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInfiniteScroll } from '@/shared/lib/hooks/useInfiniteScroll/useInfiniteScroll';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
@@ -51,9 +52,17 @@ export const Page = memo((props: PageProps) => {
     }, 500);
 
     return (
-        <section
+        <main
             ref={wrapperRef}
-            className={classNames(cls.Page, {}, [className])}
+            className={classNames(
+                toggleFeatures({
+                    name: 'isAppRedesigned',
+                    on: () => cls.PageRedesigned,
+                    off: () => cls.Page,
+                }),
+                {},
+                [className],
+            )}
             onScroll={onScroll}
             id={PAGE_ID}
             data-testid={props['data-testid'] ?? 'Page'}
@@ -62,6 +71,6 @@ export const Page = memo((props: PageProps) => {
             {onScrollEnd ? (
                 <div className={cls.trigger} ref={triggerRef} />
             ) : null}
-        </section>
+        </main>
     );
 });
