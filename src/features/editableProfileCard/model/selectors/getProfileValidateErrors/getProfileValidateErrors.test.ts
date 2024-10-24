@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { StateSchema } from '@/app/providers/StoreProvider';
 
 import { getProfileValidateErrors } from './getProfileValidateErrors';

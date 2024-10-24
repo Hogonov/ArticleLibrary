@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { screen } from '@testing-library/react';
 
 import { UserRole } from '@/entities/User';

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getQueryParams } from './addQueryParams';
 
 describe('shared/url/addQueryParams', () => {

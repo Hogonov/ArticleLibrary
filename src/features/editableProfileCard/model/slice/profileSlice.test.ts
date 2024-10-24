@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 

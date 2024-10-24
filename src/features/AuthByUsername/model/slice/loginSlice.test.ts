@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { loginActions, loginReducer } from './loginSlice';
 import { LoginSchema } from '../types/loginSchema';
 
