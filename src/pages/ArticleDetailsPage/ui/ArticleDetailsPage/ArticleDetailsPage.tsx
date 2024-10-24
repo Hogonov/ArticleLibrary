@@ -13,8 +13,8 @@ import {
 import { ToggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Card } from '@/shared/ui/Card';
-import { VStack } from '@/shared/ui/Stack';
+import { Card } from '@/shared/ui/deprecated/Card';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 import { Page } from '@/widgets/Page';
 
 import cls from './ArticleDetailsPage.module.scss';
