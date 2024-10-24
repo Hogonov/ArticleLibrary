@@ -7,7 +7,7 @@ import {
     getRouteAdmin,
     getRouteProfile,
 } from '@/shared/const/router';
-import { ComponentRender } from '@/shared/lib/tests/componentRender/ComponentRender';
+import { ComponentRender } from '@/shared/lib/tests/componentRender/componentRender';
 
 import { AppRouter } from './AppRouter';
 
