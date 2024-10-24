@@ -2,7 +2,7 @@
 
 import { screen } from '@testing-library/react';
 
-import { ComponentRender } from '@/shared/lib/tests/componentRender/componentRender';
+import { ComponentRender } from '@/shared/lib/tests/componentRender/ComponentRender';
 
 import { Counter } from './Counter';
 
