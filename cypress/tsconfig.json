@@ -8,8 +8,5 @@
     },
     "extends": "../tsconfig.json",
     "include": ["**/*.ts", "**/*.tsx"],
-    "exclude": [
-        "**/*.cy.ts*",
-        "**/*.test.ts*",
-    ]
+    "exclude": ["**/*.cy.ts*", "**/*.test.ts*"]
 }
