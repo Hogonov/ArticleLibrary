@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { StoreProvider } from '@/app/providers/StoreProvider';
 import { ThemeProvider } from '@/app/providers/ThemeProvider';
+import { ForceUpdateProvider } from '@/shared/lib/render/forceUpdate';
 
 import App from './app/App';
 import '@/app/styles/index.scss';
@@ -23,9 +24,11 @@ root.render(
     <BrowserRouter>
         <StoreProvider>
             <ErrorBoundary>
-                <ThemeProvider>
-                    <App />
-                </ThemeProvider>
+                <ForceUpdateProvider>
+                    <ThemeProvider>
+                        <App />
+                    </ThemeProvider>
+                </ForceUpdateProvider>
             </ErrorBoundary>
         </StoreProvider>
     </BrowserRouter>,
