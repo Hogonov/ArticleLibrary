@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import AvatarImg from '@/shared/assets/tests/storybook.jpg';
+import NewDesignDecorator from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 import { CommentCard } from './CommentCard';
 import type { Comment } from '../../model/types/comment';
@@ -29,4 +30,7 @@ export default meta;
 type Story = StoryObj<typeof CommentCard>;
 
 export const Primary: Story = {};
+export const PrimaryRedesigned: Story = {
+    decorators: [NewDesignDecorator],
+};
 export const Loading: Story = { args: { isLoading: true } };
