@@ -13,7 +13,7 @@ import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 
 export interface ListBoxItem<T extends string> {
-    value: string;
+    value: T;
     content: ReactNode;
     disabled?: boolean;
 }

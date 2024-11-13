@@ -1,22 +1,24 @@
-import { useTranslation } from 'react-i18next';
 import React, { memo, useCallback, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
+
+import { getUserAuthData } from '@/entities/User';
+import { LoginModal } from '@/features/AuthByUsername';
+import { AvatarDropdown } from '@/features/avatarDropdown';
+import { NotificationButton } from '@/features/notificationButton';
+import { getRouteArticleCreate } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { toggleFeatures, ToggleFeatures } from '@/shared/lib/features';
+import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink';
 import {
     Button as ButtonDeprecated,
     ButtonTheme,
 } from '@/shared/ui/deprecated/Button';
-import { LoginModal } from '@/features/AuthByUsername';
-import { getUserAuthData } from '@/entities/User';
 import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
-import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink';
-import { HStack } from '@/shared/ui/redesigned/Stack';
-import { NotificationButton } from '@/features/notificationButton';
-import { AvatarDropdown } from '@/features/avatarDropdown';
-import cls from './Navbar.module.scss';
-import { getRouteArticleCreate } from '@/shared/const/router';
-import { toggleFeatures, ToggleFeatures } from '@/shared/lib/features';
 import { Button } from '@/shared/ui/redesigned/Button';
+import { HStack } from '@/shared/ui/redesigned/Stack';
+
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
